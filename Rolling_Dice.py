@@ -6,6 +6,8 @@ import matplotlib.pyplot as mpl
 
 import math as ma
 
+print("Please enter the number of experiments you want to perform :")
+
 n = int(input())
 
 b = int(ma.sqrt(n))
@@ -23,8 +25,6 @@ die_1 = np.array(Throw_output_1)
 die_2 = np.array(Throw_output_2)
 
 output = die_1 + die_2
-
-#print(output)
 
 mpl.hist(output, bins = b)
 
